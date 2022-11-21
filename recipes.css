@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+h1 {
+    color: #776871;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -11,19 +15,58 @@ main {
     margin-bottom: 200px;
 }
 
-footer {
-    padding: 24px 0px;
-    position: fixed;
+main > div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+}
 
+.grid-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1.5px 1.5px #776871;
+}
+
+.grid-rating{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #F0F7EE;
+}
+
+footer {
+    padding: 24px 24px;
+    background-color: #c4d7f2;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 img {
     height: 200px;
+    border-radius: 8px;
 }
 
 nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #91A8a4;
     padding: 16px;
+}
+
+nav > a {
+    color: #414c49;
 }
 
 a {
@@ -32,4 +75,12 @@ a {
 
 a:hover {
     color: green;
+}
+
+tr:nth-child(even) {
+    background-color: #F0F7EE;
+}
+
+thead {
+    padding-bottom: 50px;
 }
